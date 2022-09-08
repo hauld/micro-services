@@ -1,0 +1,19 @@
+{
+  "dependencies": {
+    "@graphile/pg-pubsub": "^4.12.2",
+    "@graphql-tools/schema": "^8.3.13",
+    "axios": "^0.27.2",
+    "express": "^4.18.1",
+    "from": "^0.1.7",
+    "graphql": "^15.4.0",
+    "graphql-helix": "^1.12.0",
+    "graphql-subscriptions": "^2.0.0",
+    "graphql-ws": "^5.8.2",
+    "http": "^0.0.1-security",
+    "path": "^0.12.7",
+    "pg": "^8.7.3",
+    "postgraphile": "^4.12.9",
+    "ws": "^8.7.0"
+  },
+  "type": "module"
+}
