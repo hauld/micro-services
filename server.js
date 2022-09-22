@@ -34,18 +34,18 @@ const server = app.listen(port, () => {
     console.log(`GraphQL server is running on port ${port}.`);
 });
 const __dirname = path.resolve();
-async function loadModels(){
-  const normalizedPath = path.join(__dirname, './src/services');
+async function loadServices(){
+  const normalizedPath = path.join(__dirname, './provider/services');
   //const normalizedPath = path.join(__dirname, 'src/vtabs');
   readdirSync(normalizedPath).forEach(async function(file) {
     if(file.endsWith(".service.js")){
-      const {default: loadedModule} = await import("./src/services/" + file);
+      const {default: loadedModule} = await import("./provider/services/" + file);
       BASS.spawnService(loadedModule);
     }
   });
 }
 
-loadModels();
+loadServices();
 
 
 //test
